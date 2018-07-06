@@ -6,7 +6,7 @@ maxtime = 250;
 [concentrations, reactions] = ConcentrationsandReactions();
 
 k = rand(31,1);
-y0 = rand(33,1);
+y0 = rand(35,1);
 tspan = [0 maxtime];
 k(19) = k(19)*1e-3;
 
@@ -159,7 +159,8 @@ Fo = k(19)*ys(2,idcs0);
 Fm = k(19)*ys(2,idcsm);
 FvFm = (abs(Fm)-abs(Fo))./abs(Fm);
 figure
-plot(Sol.x,k(2)*Sol.y(2,:))
+plot(Sol.x,k(19)*Sol.y(2,:)+k(19)*Sol.y(35,:))
+
 
 function [h,t] = light_profile(tspan)
 t = tspan(1):tspan(end);

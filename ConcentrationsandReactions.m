@@ -33,6 +33,8 @@ concentrations{1,30} = 'H+,Lumen';
 concentrations{1,31} = 'PQH2';
 concentrations{1,32} = 'PQ';
 concentrations{1,33} = 'P700';
+concentrations{1,34} = 'P680d';
+concentrations{1,35} = 'P680d*';
 
 reactions{1} = 'P680 -> p680*';
 reactions{2} = 'P680* + Phe -> P680+ + Phe-'; 
@@ -64,3 +66,6 @@ reactions{27} = 'CO2 Ext -> CO2';
 reactions{28} = 'PQH@ -> PQ';
 reactions{29} = 'NADP+ + H+,Stroma -> NADPH'; 
 reactions{30} = 'Fd -> H+,Stroma + Fd-';
+reactions{31} = '2H20 -> 4H+,Lumen + 4e- + O2';
+reactions{32} = 'P680d -> P680d*';
+reactions{33} = 'P680d* -> P680d'; 
