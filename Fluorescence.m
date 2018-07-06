@@ -1,6 +1,5 @@
+function FvFm = Fluorescence(k,y0)
 
-close all
-clear
 
 rng(1)
 maxtime = 4999;
@@ -178,6 +177,7 @@ if rem(t(i)/50,2) <1
     h(i) = 1;
 else
     h(i) = 0;
+end
 end
 end
 end
