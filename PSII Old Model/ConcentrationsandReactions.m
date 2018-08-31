@@ -38,13 +38,12 @@ concentrations{1,35} = 'P680d*';
 
 reactions{1} = 'P680 -> p680*';
 reactions{2} = 'P680* + Phe -> P680+ + Phe-'; 
-reactions{3} = 'P680+ + e- -> Phe + QA-';
+reactions{3} = 'P680+ + e-,woc -> P680';
 reactions{4} = 'Phe- + QA -> Phe + QA-';
-reactions{5} = 'p680+ + QA- -> P680 + QA';
 reactions{6} = 'QA- + QB -> QA + QB-';
-reactions{7} = 'QA- + QB -> QA + QBH-';
+reactions{7} = 'QA- + QB- + H+,Stroma -> QA + QBH-';
 reactions{8} = 'QBH- + H+,Stroma -> QBH2';
-reactions{9} = 'QBH2 -> PQH2';
+reactions{9} = 'QBH2 -> PQH2,f + E,psII,Qb';
 reactions{10} = 'PQH2 + 2PC(CU2++ -> PQ + 2H+,Lumen';
 reactions{11} = 'P700 -> p700*';
 reactions{12} = 'P700* + A0 -. P700+ + A0-';
