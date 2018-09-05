@@ -6,7 +6,7 @@ rng(1)
 maxtime = 4999;
 [concentrations, reactions] = ConcentrationsandReactions();
 
-k = rand(47,1);
+k = rand(50,1);
 y0 = rand(70,1);
 tspan = [0 maxtime];
 k(19) = k(19)*1e-3;
@@ -74,7 +74,7 @@ title('Q_B');
 subplot(2,3,5)
 
 hold on
-plot(Sol.x,Sol.y([15,14],:));
+plot(Sol.x,Sol.y([18,12],:));
 % plot(t,h)
 legend('PQ','PQH_2');
 title('PQ');
@@ -82,7 +82,7 @@ title('PQ');
 subplot(2,3,6)
 
 hold on
-plot(Sol.x,Sol.y([21,19],:));
+plot(Sol.x,Sol.y([27,22],:));
 % plot(t,h)
 legend('PC(Cu^{2+})','PC(Cu^{+})');
 title('Plastocyanin');
@@ -92,7 +92,7 @@ subplot(2,3,1)
 
 hold on 
 
-plot(Sol.x,Sol.y([33,15,20],:));
+plot(Sol.x,Sol.y([28,29,30],:));
 % plot(t,h)
 legend('P700','P700*','P700+');
 title('P700');
@@ -102,7 +102,7 @@ title('P700');
 subplot(2,3,2)
 
 hold on
-plot(Sol.x,Sol.y([16,17],:));
+plot(Sol.x,Sol.y([31,32],:));
 % plot(t,h)
 legend('A_0','A_0^-');
 title('A_0');
@@ -111,7 +111,7 @@ title('A_0');
 subplot(2,3,3)
 
 hold on
-plot(Sol.x,Sol.y([18,22],:));
+plot(Sol.x,Sol.y([33,34],:));
 % plot(t,h)
 legend('A_1','A_1^-');
 title('A_0');
@@ -121,7 +121,7 @@ title('A_0');
 subplot(2,3,4)
 
 hold on
-plot(Sol.x,Sol.y([23,24],:));
+plot(Sol.x,Sol.y([46,43],:));
 % plot(t,h)
 legend('Fd','Fd^-');
 title('Ferredoxin');
@@ -131,14 +131,14 @@ subplot(2,3,5)
 
 hold on 
 
-plot(Sol.x,Sol.y([25,26],:));
+plot(Sol.x,Sol.y([51,55],:));
 % plot(t,h)
 legend('NADP+','NADPH');
 title('NADPH');
 
 hold off 
 subplot(2,3,6)
-plot(Sol.x,Sol.y([27,28],:));
+plot(Sol.x,Sol.y([56,57],:));
 legend('ADP','ATP');
 title('ATP');
 
@@ -147,12 +147,12 @@ subplot(2,2,1)
 plot(t,h)
 legend('light profile')
 
-subplot(2,2,2)
-plot(Sol.x,Sol.y(29,:))
-legend('CO_2')
+%subplot(2,2,2)
+%plot(Sol.x,Sol.y(29,:))
+%legend('CO_2')
 
 subplot(2,2,3)
-plot(Sol.x,Sol.y([11,30],:))
+plot(Sol.x,Sol.y([58,59],:))
 legend('H^+_{stroma}','H^+_{lumen}')
 
 to = 0:100:maxtime;

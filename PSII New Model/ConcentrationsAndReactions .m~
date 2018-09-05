@@ -1,4 +1,4 @@
-function [concentrations, reactions] = ConcentrationsAndReactions()
+function [concentrations, reactions] = ConcentrationsandReactions()
 %test test
 
 concentrations{1,1} = 'P680'; 
@@ -71,8 +71,7 @@ concentrations{1,67} = 'PQH2 B, cyt cycl';
 concentrations{1,68} = 'PQ- B,cyt,cycl';
 concentrations{1,69} = 'Tyr';
 concentrations{1,70} = 'Tyr-';
-concentrations{1,71} = 'P680d';
-concentrations{1,72} = 'p680*d';
+concentrations{1,71} = '
 
 
 reactions{1} = 'P680 -> p680*';
@@ -107,4 +106,3 @@ reactions{30} = 'Fd -> H+,Stroma + Fd-';
 reactions{31} = '2H20 -> 4H+,Lumen + 4e- + O2';
 reactions{32} = 'P680d -> P680d*';
 reactions{33} = 'P680d* -> P680d'; 
-end
