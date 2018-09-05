@@ -1,4 +1,4 @@
-function [concentrations, reactions] = ConcentrationsandReactions()
+function [concentrations, reactions] = ConcentrationsAndReactions()
 %test test
 
 concentrations{1,1} = 'P680'; 
@@ -104,3 +104,4 @@ reactions{30} = 'Fd -> H+,Stroma + Fd-';
 reactions{31} = '2H20 -> 4H+,Lumen + 4e- + O2';
 reactions{32} = 'P680d -> P680d*';
 reactions{33} = 'P680d* -> P680d'; 
+end
