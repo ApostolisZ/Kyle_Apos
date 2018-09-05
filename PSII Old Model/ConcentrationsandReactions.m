@@ -68,3 +68,4 @@ reactions{30} = 'Fd -> H+,Stroma + Fd-';
 reactions{31} = '2H20 -> 4H+,Lumen + 4e- + O2';
 reactions{32} = 'P680d -> P680d*';
 reactions{33} = 'P680d* -> P680d'; 
+reactions{34} = 'H+,Lumen ->';
