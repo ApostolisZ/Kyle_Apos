@@ -6,7 +6,7 @@ rng(1)
 maxtime = 4999;
 [concentrations, reactions] = ConcentrationsandReactions();
 
-k = rand(47,1);
+k = rand(50,1);
 y0 = rand(70,1);
 tspan = [0 maxtime];
 k(19) = k(19)*1e-3;

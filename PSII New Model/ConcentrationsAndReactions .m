@@ -71,7 +71,8 @@ concentrations{1,67} = 'PQH2 B, cyt cycl';
 concentrations{1,68} = 'PQ- B,cyt,cycl';
 concentrations{1,69} = 'Tyr';
 concentrations{1,70} = 'Tyr-';
-
+concentrations{1,71} = 'P680d';
+concentrations{1,72} = 'p680*d';
 
 
 reactions{1} = 'P680 -> p680*';
