@@ -9,15 +9,15 @@ maxtime = 4999;
 k = rand(50,1);
 y0 = rand(70,1);
 tspan = [0 maxtime];
-k(19) = k(19)*1e-3;
+k(21) = k(21)*1e-3;
 
-idc = [2,4,6,8,10,12,13,15,17,19,20,22,24,31];
-y0(idc) = zeros(length(idc),1); 
-y0(9) = 1;
-y0(7) = 1;
+%idc = [2,4,6,8,10,12,13,15,17,19,20,22,24,31];
+%y0(idc) = zeros(length(idc),1); 
+%y0(9) = 1;
+%y0(7) = 1;
 
-y0(29) = 2; %initial CO2
-y0(32) = 0.1*y0(32);
+%initial CO2 y0(29) = 2; 
+%y0(32) = 0.1*y0(32);
 
 Sol = ode23s(@(t,y) PSIIODES(t,y,k),tspan,y0);
 

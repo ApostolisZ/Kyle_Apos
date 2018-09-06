@@ -1,8 +1,8 @@
-function [concentrations, reactions] = ConcentrationsandReactions()
+function[concentrations, reactions] = ConcentrationsAndReactions()
 %test test
 
 concentrations{1,1} = 'P680'; 
-concentrations{1,2} = 'P680*';
+concentrations{1,2} = 'P680*';s
 concentrations{1,3} = 'P680+';
 concentrations{1,4} = 'Pheo';
 concentrations{1,5} = 'Pheo-';
