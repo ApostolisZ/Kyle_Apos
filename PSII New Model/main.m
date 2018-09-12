@@ -2,28 +2,28 @@
 close all
 clear
 
-rng(1)
+% rng(1)
 maxtime = 4999;
-[concentrations, reactions] = ConcentrationsandReactions();
+[concentrations, reactions] = ConcentrationsAndReactions();
 
 k = rand(50,1);
-y0 = rand(70,1);
+y0 = rand(72,1);
 tspan = [0 maxtime];
-k(19) = k(19)*1e-3;
+% k(19) = k(19)*1e-3;
 
 
-zero_idcs = [2 3 5 7 9 10 11 17 28 29 32 34 36 38 40 41 45];
-one_idcs = [1 4 6];
-ten_inds = [12 13 14 15 18 20 21 22 24 25 26 27];
-
-
-zero_idc = [2,4,6,8,10,12,13,15,17,19,20,22,24,31];
-y0(zero_idc) = zeros(length(zero_idc),1); 
-y0(9) = 1;
-y0(7) = 1;
-
-y0(29) = 2; %initial CO2
-y0(32) = 0.1*y0(32);
+% zero_idcs = [2 3 5 7 9 10 11 17 28 29 32 34 36 38 40 41 45];
+% one_idcs = [1 4 6];
+% ten_inds = [12 13 14 15 18 20 21 22 24 25 26 27];
+% 
+% 
+% zero_idc = [2,4,6,8,10,12,13,15,17,19,20,22,24,31];
+% y0(zero_idc) = zeros(length(zero_idc),1); 
+% y0(9) = 1;
+% y0(7) = 1;
+% 
+% y0(29) = 2; %initial CO2
+% y0(32) = 0.1*y0(32);
 
 Sol = ode23s(@(t,y) PSIIODES(t,y,k),tspan,y0);
 

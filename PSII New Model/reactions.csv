@@ -1,0 +1,50 @@
+P680 -> P680*
+P680* + Pheo -> P680+ + Pheo-
+P680+ + Tyr- -> P680 + Tyr
+Pheo- + QA -> Pheo + QA-
+QA- + QB -> QA + QB-
+"QA- + QB- + H+,Stroma -> QA + QBH-"
+"QBH- + H+,Stroma -> QBH2 "
+"QBH2 -> PQH2,f + E,PSII,QB"
+"PQH2,f + E,c,PQ -> PQH2,B,C "
+"PQH2,B,C + 2 E,c,e -> PQ,B,C + 2 H+,Lumen + 2 e-,c"
+"PQ,B,C -> PQ,f + E,c,PQ"
+"PC(Cu2+),B,C + e-,c -> PC(Cu+),B,C + E,c,e"
+"PC(Cu+),B,C  -> PC(Cu+),f + E,c,PC"
+"PC(Cu+),f + E,PSI,PC -> PC(Cu+),B,PSI "
+"PC(Cu+),B,PSI + P700+ -> PC(Cu+2),B,PSI + P700"
+"PC(Cu2+),B,PSI -> PC(Cu2+),f + E,PSI,PC"
+"PC(Cu2+),f + E,c,PC -> PC(Cu2+),B,C"
+P700 -> P700* 
+P700* + A0 -> P700+ + A0-
+A0- + A1 -> A0 + A1-
+A1- + FX -> A1 + FX-
+FX- + FA -> FX + FA-
+FA- + FB -> FA + FB-
+"FB- + Fd,B,PSI -> FB + Fd-,B,PSI"
+"Fd-,B,PSI -> Fd-,f + E,PSI,Fd"
+"Fd-,f + E,FNR,Fd -> Fd-,B,FNR"
+"Fd-,B,FNR + E,FNR,e- -> Fd,B,FNR + e-,FNR "
+"Fd,B,FNR -> Fd,f + E,FNR,Fd"
+"Fd,f + E,PSI,Fd -> Fd,B,PSI"
+"NADP+,f + E,FNR,NADP -> NADP+,B,FNR"
+"NADP+,B,FNR + 2e-,FNR + H+,Stroma -> NADPH,B,FNR"
+"NADPH,B,FNR -> NADPH,f + E,FNR,NADPH"
+"NADPH,f -> NADP+,f"
+"H+,Lumen + ADP -> H+,Stroma + ATP"
+"2 NADPH,f + 3 ATP -> 2 NADP+,f + 3 ADP "
+ATP -> ADP
+P680* -> P680
+P680+ + QA- -> P680 + QA
+"Fd-,f + E,cyt,Fd -> Fd-,B,cyt"
+"Fd-,B,cyt -> e-,cyt,cyclic + Fd,B,cyt "
+"Fd,B,cyt -> Fd,f + E,cyt,Fd "
+"PQ,f + E,cyt,PQ,cycl -> PQ,B,cyt,cycl"
+"PQ,B,cyt,c + e-,cyt,cycl -> PQ-,B,cyt,cycl"
+"PQ-,B,cyt,cycl + e-,cyt,cyc + H+,Stroma -> PQH-,B,cyt,cycl"
+"PQH-B,cyt,cycl + H+,Stroma -> PQH2,B,cyt,cycl "
+"PQH2,B,cyt,cycl -> PQH2,f + Ecyt,PQ,cycl"
+Tyr -> Tyr-
+"PQ,f + E,PSII,QB-> QB"
+P680d -> P680*d 
+P680*d -> P680d
